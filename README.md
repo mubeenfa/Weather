@@ -18,9 +18,6 @@ Additional Details: Provides additional weather details including Rain, Wind (sp
 HTML: Markup language for structuring the web page.
 CSS: Stylesheet language for enhancing the visual presentation of the app.
 JavaScript: Programming language for implementing dynamic behavior and functionality.
-API
-Weather data is fetched from the weatherapi.com API, which provides comprehensive and accurate weather information.
 
-**Acknowledgements**
-Weather data provided by weatherapi.com.
-Icons sourced from [insert icon source].
+**API**
+Weather data is fetched from the weatherapi.com API, which provides comprehensive and accurate weather information.
