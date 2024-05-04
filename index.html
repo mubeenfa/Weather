@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Weather Forecast</title>
+</head>
+<body>
+
+    <div class="weather_container">
+        <div class="searchbar">
+            <div class="searchbox">
+                <input type="text" id="search" autocomplete="off" placeholder="Search">
+                <a id="currentweather">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <div class="search_resultbox">
+                </div>
+            </div>
+            
+        </div>
+        <div class="location_date">
+            <div class="country">
+                <h1></h1>
+            </div>
+            <div class="city">
+                <h3></h3>
+            </div>
+            <div class="date">
+                <p>May 01, Wednesday</p>
+            </div>
+        </div>
+        <div class="temperature_details">
+            <div class="temperature">
+                <div class="temp_container">
+                    <h1>20</h1>
+                    <span>°C</span>
+                </div>                
+                <p>Feels like <b>24</b> °C</p>
+            </div>
+            <div class="vertline"></div>
+            <div class="condition_icon cubecard">
+                <img src="" style="background-size: cover;">
+            </div>
+            <div class="vertline"></div>
+            <div class="condition_details">
+                <h3>Clear</h3>
+                <p>06:00 h</p>
+            </div>
+        </div>
+        <div class="more_details">
+            <div class="rain cubecard">
+                <div class="cube_icon">
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                </div>
+                <div class="cube_title">Rain</div>
+                <div class="rain_cube_value"><p>2 %</p></div>
+            </div>
+            <div class="wind cubecard">
+                <div class="cube_icon">
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+                <div class="cube_title">Wind</div>
+                <div class="wind_cube_value" style="display: flex; justify-content: space-evenly; align-items: center;">
+                    <p>8 kph </p><img id="wind_direction_image" src="images/arrow.svg" style="width: 30px; height: 20px; filter: invert(1);" alt="">            
+                </div>
+            </div>
+            <div class="humidity cubecard">
+                <div class="cube_icon">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <div class="cube_title">Humidity</div>
+                <div class="humidity_cube_value"><p></p></div>
+            </div>
+            <div class="pressure cubecard">
+                <div class="cube_icon">
+                    <img src = "images/meter.svg" style="width: 20px; height: 20px; filter: invert(1);"/>
+                </div>
+                <div class="cube_title">Pressure</div>
+                <div class="pressure_cube_value"><p>1009 <span>mb</span></p></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/JS/autoCompleteSearch.js"></script>
+    <script type="module" src="/JS/main.js"></script> 
+</body>
+</html>
